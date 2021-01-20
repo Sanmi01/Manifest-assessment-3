@@ -1,0 +1,10 @@
+SELECT COUNT(ID) FROM teamoluwasanmiawelewa2021;
+SELECT COUNT(ID) FROM teamoluwasanmiawelewa2021 WHERE department = 'Accounting';
+SELECT COUNT(ID) FROM teamoluwasanmiawelewa2021 WHERE status = 'Pending';
+SELECT * FROM teamoluwasanmiawelewa2021 LIMIT 5;
+SELECT * FROM teamoluwasanmiawelewa2021 WHERE age > 18 AND age < 26;
+SELECT * FROM teamoluwasanmiawelewa2021 WHERE created_dt = '2020-02-01';
+SELECT * FROM teamoluwasanmiawelewa2021 WHERE created_dt BETWEEN '2020-04-01' AND '2020-06-01';
+UPDATE teamoluwasanmiawelewa2021 SET status = 'Activated' WHERE status = 'Pending';
+UPDATE teamoluwasanmiawelewa2021 SET name = 'Timothy' WHERE name = 'Tim';
+SELECT COUNT(*), department FROM teamoluwasanmiawelewa2021 GROUP BY department;
